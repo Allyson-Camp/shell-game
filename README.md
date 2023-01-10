@@ -12,7 +12,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 1. **Make a drawing of your app. Simple "wireframes"** COMPLETE
     //complete
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision** COMPLETE
+1. **Look at the drawing and name the HTML elements you'll need to realize your vision** 
     //<h1> for title
     //<img>'s of 3 shells
         //pink, blue, orange
@@ -25,6 +25,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
         //# wrong
         //out of
         //# chances
+    //style in CSS
 1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
     //# of clicks
 1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
