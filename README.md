@@ -10,9 +10,9 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
-1. **Make a drawing of your app. Simple "wireframes"**
+1. **Make a drawing of your app. Simple "wireframes"** COMPLETE
     //complete
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
+1. **Look at the drawing and name the HTML elements you'll need to realize your vision** COMPLETE
     //<h1> for title
     //<img>'s of 3 shells
         //pink, blue, orange
@@ -46,11 +46,13 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
         buttons: for user to choose which shell they think mr. crabs is in
         div's: to show the states and program how to view (#'s) will change after 'click' event listeners
 1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-    //
-
+    //eventListeners for buttons
+    //formulas to calculate #'s for the 3 div's
+    //hide/move the crab after a guess
+    //add the crab to the correct guess
 
 1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-    //console.log as dom elements are manipulated
+    //console.log as dom elements are manipulated or formulas are put in
 1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
     //JS depends on HTML, do HTML first
     //CSS styling to get layout right
