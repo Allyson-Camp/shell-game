@@ -9,9 +9,9 @@ const pinkShellButton = document.getElementById('pink-shell-button');
 
 
 //divs
-const orangeShellElement = document.getElementById('orange-shell-element');
-const blueShellElement = document.getElementById('blue-shell-element');
-const pinkShellElement = document.getElementById('pink-shell-element');
+const orangeShellElement = document.getElementById('orangeShell-element');
+const blueShellElement = document.getElementById('blueShell-element');
+const pinkShellElement = document.getElementById('pinkShell-element');
 
 //spans
 const winsEl = document.getElementById('wins');
@@ -19,13 +19,62 @@ const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
 /* State */
-let correctGuesses = 0;
-let incorrectGuesses = 0;
+let totalWins = 0;
+let totalLosses = 0;
+let totalGuesses = 0;
 
 /* Events */
 
-    /*click events*/
+    // eventListeners for buttons
+orangeShellButton.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    handleGuess('orangeShell-element', correctSpot);
+});
 
+blueShellButton.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    handleGuess('blueShell-element', correctSpot);
+});
+
+pinkShellButton.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    handleGuess('pinkShell-element', correctSpot);
+});
+
+function getRandomHidingSpot() {
+    const hidingSpots = [
+        'orangeShell',
+        'blueShell',
+        'pinkShell'
+    ];
+    const index = Math.floor(Math.random() * hidingSpots.length);
+    const hidingSpotString = hidingSpots[index];
+    return hidingSpotString;
+}
+// total wins not incrementing, come back
+function handleGuess(userGuess, correctSpot) {
+    orangeShellElement.classList.remove('harold');
+    blueShellElement.classList.remove('harold');
+    pinkShellElement.classList.remove('harold');
+// hide/move the crab after a guess
+    totalGuesses++;
+
+    const correctHidingSpot = document.getElementById(`${correctSpot}-element`);
+// add the crab to the correct guess
+    correctHidingSpot.classList.add('harold');
+
+    if (userGuess === correctSpot) {
+        totalWins++;
+    } else {
+        totalLosses++;
+    }
+    totalEl.textContent = totalGuesses;
+    winsEl.textContent = totalWins;
+    lossesEl.textContent = totalLosses;
+}
+
+    // hide/move the crab after a guess
+    // add the crab to the correct guess
 
 /* Display Functions */
 
