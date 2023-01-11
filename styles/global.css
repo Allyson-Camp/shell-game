@@ -30,11 +30,6 @@ header .logo {
     height: 100%;
 }
 
-main {
-   
-}
-
-
 .main-section {
     display: flex;
     flex-direction: row;
@@ -71,3 +66,9 @@ img {
 .title {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+/* .button {
+    display: flex;
+    justify-content: ;
+} */
+/* trying to center the buttons under the shell photos */
