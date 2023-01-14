@@ -72,3 +72,9 @@ img {
     justify-content: ;
 } */
 /* trying to center the buttons under the shell photos */
+
+.harold::after {
+    font-size: 10rem;
+    content: '🦀';
+    position:absolute;
+}

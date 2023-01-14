@@ -70,10 +70,9 @@ function handleGuess(userGuess, correctSpot) {
     }
     totalEl.textContent = totalGuesses;
     winsEl.textContent = totalWins;
-    lossesEl.textContent = totalLosses;
+    lossesEl.textContent = totalGuesses;
 }
 
-    // hide/move the crab after a guess
     // add the crab to the correct guess
 
 /* Display Functions */
