@@ -7,7 +7,6 @@ const orangeShellButton = document.getElementById('orange-shell-button');
 const blueShellButton = document.getElementById('blue-shell-button');
 const pinkShellButton = document.getElementById('pink-shell-button');
 
-
 //divs
 const orangeShellElement = document.getElementById('orangeShell-element');
 const blueShellElement = document.getElementById('blueShell-element');
@@ -25,7 +24,7 @@ let totalGuesses = 0;
 
 /* Events */
 
-    // eventListeners for buttons
+// eventListeners for buttons
 orangeShellButton.addEventListener('click', () => {
     const correctSpot = getRandomHidingSpot();
     handleGuess('orangeShell', correctSpot);
@@ -42,11 +41,7 @@ pinkShellButton.addEventListener('click', () => {
 });
 
 function getRandomHidingSpot() {
-    const hidingSpots = [
-        'orangeShell',
-        'blueShell',
-        'pinkShell'
-    ];
+    const hidingSpots = ['orangeShell', 'blueShell', 'pinkShell'];
     const index = Math.floor(Math.random() * hidingSpots.length);
     const hidingSpotString = hidingSpots[index];
     return hidingSpotString;
@@ -56,12 +51,11 @@ function handleGuess(userGuess, correctSpot) {
     orangeShellElement.classList.remove('harold');
     blueShellElement.classList.remove('harold');
     pinkShellElement.classList.remove('harold');
-// hide/move the crab after a guess
+    // hide/move the crab after a guess
     totalGuesses++;
-console.log(userGuess, correctSpot);
 
     const correctHidingSpot = document.getElementById(`${correctSpot}-element`);
-// add the crab to the correct guess
+    // add the crab to the correct guess
     correctHidingSpot.classList.add('harold');
 
     if (userGuess === correctSpot) {
@@ -74,7 +68,7 @@ console.log(userGuess, correctSpot);
     lossesEl.textContent = totalLosses;
 }
 
-    // add the crab to the correct guess
+// add the crab to the correct guess
 
 /* Display Functions */
 

@@ -1,6 +1,6 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --background: rgb(120, 203, 244);
+    --header-background: rgb(205, 217, 244);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -75,14 +75,10 @@ img {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-/* .button {
-    display: flex;
-    justify-content: ;
-} */
-/* trying to center the buttons under the shell photos */
 
 .harold::after {
     font-size: 10rem;
     content: '🦀';
     position:absolute;
 }
+
